@@ -13,15 +13,13 @@ export const fetchAdvertisements = async (): Promise<Advertisement[]> => {
 export const fetchAdvertisementById = async (id: string): Promise<Advertisement> => {
   const response = await fetch(`${API_URL}/advertisements/${id}`);
   if (!response.ok) {
-    throw new Error('Failed to load ads');
+    throw new Error('Failed to load ad');
   }
   return response.json();
 };
 
 export const createAdvertisement = async (ad: Omit<Advertisement, 'id'>): Promise<Advertisement> => {
-
   const ads = await fetchAdvertisements();
-  
   const maxId = Math.max(...ads.map(ad => parseInt(ad.id, 10)), 0);
   
   const newAd: Advertisement = {

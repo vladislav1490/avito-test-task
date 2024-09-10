@@ -32,6 +32,10 @@ const AllAdvertisementsPage = () => {
     setAds((prevAds) => [...prevAds, newAd]);
   };
 
+  const handleSubmit = (ad: Partial<Advertisement>) => {
+    console.log("Form submitted with data:", ad);
+  };
+
   useEffect(() => {
     const filtered = ads.filter((ad) =>
       ad.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -96,7 +100,13 @@ const AllAdvertisementsPage = () => {
         Создать новое объявление
       </button>
 
-      {isModalOpen && <Modal onClose={() => setIsModalOpen(false)} onNewAd={handleNewAd} />}
+      {isModalOpen && (
+  <Modal 
+    onClose={() => setIsModalOpen(false)} 
+    onSubmit={handleSubmit}
+    onNewAd={handleNewAd} 
+  />
+)}
     </div>
   );
 };

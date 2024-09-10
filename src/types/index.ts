@@ -3,9 +3,9 @@ export type Advertisement = {
     name: string;
     description?: string;
     price: number;
-    createdAt: string;
-    views: number;
-    likes: number;
+    createdAt?: string;
+    views?: number;
+    likes?: number;
     imageUrl?: string;
   };
   

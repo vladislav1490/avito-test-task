@@ -1,43 +1,53 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './Modal.module.css';
 import { Advertisement } from '../types';
-import { createAdvertisement } from '../modules/advertisements/services/advertisementService';
 
 interface ModalProps {
   onClose: () => void;
-  onNewAd: (ad: Advertisement) => void;
+  onSubmit: (ad: Advertisement) => void;
+  onNewAd?: (newAd: Advertisement) => void;
+  initialData?: Advertisement;
 }
 
-const Modal = ({ onClose, onNewAd }: ModalProps) => {
-  const [name, setName] = useState('');
-  const [description, setDescription] = useState('');
-  const [price, setPrice] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
+const Modal = ({ onClose, onSubmit, initialData }: ModalProps) => {
+  const [name, setName] = useState(initialData?.name || '');
+  const [description, setDescription] = useState(initialData?.description || '');
+  const [price, setPrice] = useState(initialData?.price.toString() || '');
+  const [imageUrl, setImageUrl] = useState(initialData?.imageUrl || '');
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  useEffect(() => {
+    if (initialData) {
+      setName(initialData.name || '');
+      setDescription(initialData.description || ''); 
+      setPrice(initialData.price?.toString() || '');
+      setImageUrl(initialData.imageUrl || '');
+    }
+  }, [initialData]);
+
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const newAd: Omit<Advertisement, 'id'> = {
+  
+    if (!initialData) {
+      throw new Error("initialData is required for editing an advertisement.");
+    }
+  
+    const updatedAd: Advertisement = {
+      ...initialData,
       name,
       description,
       price: Number(price),
       imageUrl,
-      views: 0,
-      likes: 0,
-      createdAt: new Date().toISOString(), 
     };
-    try {
-      const createdAd = await createAdvertisement(newAd);
-      onNewAd(createdAd)
-      onClose();
-    } catch (error) {
-      console.error('Error creating ad:', error);
-    }
+  
+    onSubmit(updatedAd);
+    onClose();
   };
+  
 
   return (
     <div className={styles.modalBackdrop}>
       <div className={styles.modalContent}>
-        <h2>Создать новое объявление</h2>
+        <h2>{initialData ? 'Редактировать объявление' : 'Создать новое объявление'}</h2>
         <form onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <label htmlFor="name">Название:</label>

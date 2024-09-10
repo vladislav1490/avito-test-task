@@ -7,7 +7,6 @@ const AdvertisementPage = () => {
     <div>
       <h1>Advertisement Details</h1>
       <p>Displaying advertisement with ID: {id}</p>
-
     </div>
   );
 };

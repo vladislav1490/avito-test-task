@@ -7,9 +7,9 @@ export type Advertisement = {
     views: number;
     likes: number;
     imageUrl?: string;
-}
-
-export const OrderStatus = {
+  };
+  
+  export const OrderStatus = {
     Created: 0,
     Paid: 1,
     Transport: 2,
@@ -17,11 +17,11 @@ export const OrderStatus = {
     Received: 4,
     Archived: 5,
     Refund: 6
-} as const;
-
-export type OrderItem = Advertisement & { count: number; };
-
-export type Order = {
+  } as const;
+  
+  export type OrderItem = Advertisement & { count: number };
+  
+  export type Order = {
     id: string;
     status: typeof OrderStatus[keyof typeof OrderStatus];
     createdAt: string;
@@ -29,10 +29,11 @@ export type Order = {
     items: Array<OrderItem>;
     deliveryWay: string;
     total: number;
-}
-
-export type Image = {
+  };
+  
+  export type Image = {
     id: number;
     url: string;
     name: string;
-}
+  };
+  

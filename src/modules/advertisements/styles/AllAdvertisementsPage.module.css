@@ -1,0 +1,58 @@
+.advertisementsContainer {
+    padding: 2rem;
+  }
+  
+  .adsList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .adItem {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    width: calc(33.33% - 1rem);
+    background-color: white;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .adItem:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .adImage {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .searchInput {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+  }
+  
+  .itemsPerPage {
+    margin-bottom: 1rem;
+  }
+  
+  .createAdButton {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .createAdButton:hover {
+    background-color: #0056b3;
+  }
+  

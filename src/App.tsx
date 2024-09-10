@@ -1,33 +1,25 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import AllAdvertisementsPage from './pages/AllAdvertisementsPage';
-import OrdersPage from './pages/OrdersPage';
-import AdvertisementPage from './pages/AdvertisementPage';
-import OrderPage from './pages/OrderPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AllAdvertisementsPage from './modules/advertisements/pages/AllAdvertisementsPage';
+import OrdersPage from './modules/orders/pages/OrdersPage';
+import AdvertisementPage from './modules/advertisements/pages/AdvertisementPage';
+import OrderPage from './modules/orders/pages/OrderPage';
+import Navigation from './components/Navigation'; // Подключаем навигацию
+import './styles/global.css';
 
 function App() {
-    return (
-        <Router>
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/advertisements">Advertisements</Link>
-                        </li>
-                        <li>
-                            <Link to="/orders">Orders</Link>
-                        </li>
-                    </ul>
-                </nav>
-
-                <Routes>
-                    <Route path="/advertisements" element={<AllAdvertisementsPage />} />
-                    <Route path="/advertisements/:id" element={<AdvertisementPage />} />
-                    <Route path="/orders" element={<OrdersPage />} />
-                    <Route path="/orders/:id" element={<OrderPage />} />
-                </Routes>
-            </div>
-        </Router>
-    );
+  return (
+    <Router>
+      <div>
+        <Navigation /> {/* Добавляем панель навигации */}
+        <Routes>
+          <Route path="/advertisements" element={<AllAdvertisementsPage />} />
+          <Route path="/advertisements/:id" element={<AdvertisementPage />} />
+          <Route path="/orders" element={<OrdersPage />} />
+          <Route path="/orders/:id" element={<OrderPage />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 export default App;

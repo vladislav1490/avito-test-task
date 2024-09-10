@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    font-size: 1.2rem;
+  }
+  
+  .navItem a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navItem a:hover {
+    background-color: #444;
+  }
+  
+  .active {
+    background-color: #007bff;
+    color: white;
+  }
+  

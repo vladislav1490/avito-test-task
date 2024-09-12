@@ -144,7 +144,7 @@
   "orders": [
     {
       "id": "1",
-      "status": 5,
+      "status": 1,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "",
       "total": 314000,
@@ -152,7 +152,7 @@
       "items": [
         {
           "id": "8",
-          "name": "Новый айфон",
+          "name": "New iPhone",
           "price": 100000,
           "createdAt": "2024-08-12T12:16:55.351Z",
           "views": 200000,
@@ -162,8 +162,8 @@
         },
         {
           "id": "6",
-          "name": "Картонная коробка",
-          "description": "Почная.",
+          "name": "Cardboard Box",
+          "description": "Essential.",
           "price": 7000,
           "createdAt": "2024-04-12T20:16:55.351Z",
           "views": 1,
@@ -175,7 +175,7 @@
     },
     {
       "id": "2",
-      "status": 5,
+      "status": 2,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "2024-08-12T20:25:55.351Z",
       "total": 33000,
@@ -183,8 +183,8 @@
       "items": [
         {
           "id": "2",
-          "name": "Ведро снега",
-          "description": "Последняя возможность купить по выгодной цене!",
+          "name": "Bucket of Snow",
+          "description": "Last chance to buy at a great price!",
           "price": 3000,
           "createdAt": "2023-08-12T20:16:55.351Z",
           "views": 77832,
@@ -194,7 +194,7 @@
         },
         {
           "id": "5",
-          "name": "Носки",
+          "name": "Socks",
           "price": 6000,
           "createdAt": "2024-06-12T20:16:55.351Z",
           "views": 0,
@@ -206,7 +206,7 @@
     },
     {
       "id": "3",
-      "status": 5,
+      "status": 3,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "",
       "total": 314000,
@@ -214,7 +214,7 @@
       "items": [
         {
           "id": "8",
-          "name": "Новый айфон",
+          "name": "New iPhone",
           "price": 100000,
           "createdAt": "2024-08-12T12:16:55.351Z",
           "views": 200000,
@@ -224,8 +224,8 @@
         },
         {
           "id": "6",
-          "name": "Картонная коробка",
-          "description": "Почная.",
+          "name": "Cardboard Box",
+          "description": "Essential.",
           "price": 7000,
           "createdAt": "2024-04-12T20:16:55.351Z",
           "views": 1,
@@ -237,7 +237,7 @@
     },
     {
       "id": "4",
-      "status": 5,
+      "status": 4,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "2024-08-12T20:25:55.351Z",
       "total": 33000,
@@ -245,8 +245,8 @@
       "items": [
         {
           "id": "2",
-          "name": "Ведро снега",
-          "description": "Последняя возможность купить по выгодной цене!",
+          "name": "Bucket of Snow",
+          "description": "Last chance to buy at a great price!",
           "price": 3000,
           "createdAt": "2023-08-12T20:16:55.351Z",
           "views": 77832,
@@ -256,7 +256,7 @@
         },
         {
           "id": "5",
-          "name": "Носки",
+          "name": "Socks",
           "price": 6000,
           "createdAt": "2024-06-12T20:16:55.351Z",
           "views": 0,
@@ -276,7 +276,7 @@
       "items": [
         {
           "id": "8",
-          "name": "Новый айфон",
+          "name": "New iPhone",
           "price": 100000,
           "createdAt": "2024-08-12T12:16:55.351Z",
           "views": 200000,
@@ -286,8 +286,8 @@
         },
         {
           "id": "6",
-          "name": "Картонная коробка",
-          "description": "Почная.",
+          "name": "Cardboard Box",
+          "description": "Essential.",
           "price": 7000,
           "createdAt": "2024-04-12T20:16:55.351Z",
           "views": 1,
@@ -299,7 +299,7 @@
     },
     {
       "id": "6",
-      "status": 5,
+      "status": 6,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "2024-08-12T20:25:55.351Z",
       "total": 33000,
@@ -307,8 +307,8 @@
       "items": [
         {
           "id": "2",
-          "name": "Ведро снега",
-          "description": "Последняя возможность купить по выгодной цене!",
+          "name": "Bucket of Snow",
+          "description": "Last chance to buy at a great price!",
           "price": 3000,
           "createdAt": "2023-08-12T20:16:55.351Z",
           "views": 77832,
@@ -318,7 +318,7 @@
         },
         {
           "id": "5",
-          "name": "Носки",
+          "name": "Socks",
           "price": 6000,
           "createdAt": "2024-06-12T20:16:55.351Z",
           "views": 0,
@@ -338,7 +338,7 @@
       "items": [
         {
           "id": "8",
-          "name": "Новый айфон",
+          "name": "New iPhone",
           "price": 100000,
           "createdAt": "2024-08-12T12:16:55.351Z",
           "views": 200000,
@@ -348,8 +348,8 @@
         },
         {
           "id": "6",
-          "name": "Картонная коробка",
-          "description": "Почная.",
+          "name": "Cardboard Box",
+          "description": "Essential.",
           "price": 7000,
           "createdAt": "2024-04-12T20:16:55.351Z",
           "views": 1,
@@ -361,7 +361,7 @@
     },
     {
       "id": "8",
-      "status": 5,
+      "status": 1,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "2024-08-12T20:25:55.351Z",
       "total": 33000,
@@ -369,8 +369,8 @@
       "items": [
         {
           "id": "2",
-          "name": "Ведро снега",
-          "description": "Последняя возможность купить по выгодной цене!",
+          "name": "Bucket of Snow",
+          "description": "Last chance to buy at a great price!",
           "price": 3000,
           "createdAt": "2023-08-12T20:16:55.351Z",
           "views": 77832,
@@ -380,7 +380,7 @@
         },
         {
           "id": "5",
-          "name": "Носки",
+          "name": "Socks",
           "price": 6000,
           "createdAt": "2024-06-12T20:16:55.351Z",
           "views": 0,

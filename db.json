@@ -144,7 +144,7 @@
   "orders": [
     {
       "id": "1",
-      "status": 1,
+      "status": 5,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "",
       "total": 314000,
@@ -209,7 +209,7 @@
       "status": 3,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "",
-      "total": 314000,
+      "total": 60000,
       "deliveryWay": "mail",
       "items": [
         {
@@ -240,7 +240,7 @@
       "status": 4,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "2024-08-12T20:25:55.351Z",
-      "total": 33000,
+      "total": 100000,
       "deliveryWay": "sdek",
       "items": [
         {
@@ -271,7 +271,7 @@
       "status": 5,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "",
-      "total": 314000,
+      "total": 1000,
       "deliveryWay": "mail",
       "items": [
         {
@@ -302,7 +302,7 @@
       "status": 6,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "2024-08-12T20:25:55.351Z",
-      "total": 33000,
+      "total": 530490,
       "deliveryWay": "sdek",
       "items": [
         {
@@ -333,7 +333,7 @@
       "status": 5,
       "createdAt": "2024-08-12T20:20:55.351Z",
       "finishedAt": "",
-      "total": 314000,
+      "total": 300000,
       "deliveryWay": "mail",
       "items": [
         {

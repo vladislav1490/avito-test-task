@@ -238,7 +238,7 @@
     {
       "id": "4",
       "status": 4,
-      "createdAt": "2024-08-12T20:20:55.351Z",
+      "createdAt": "2024-07-31T20:20:55.351Z",
       "finishedAt": "2024-08-12T20:25:55.351Z",
       "total": 100000,
       "deliveryWay": "sdek",
@@ -300,7 +300,7 @@
     {
       "id": "6",
       "status": 6,
-      "createdAt": "2024-08-12T20:20:55.351Z",
+      "createdAt": "2024-08-15T20:20:55.351Z",
       "finishedAt": "2024-08-12T20:25:55.351Z",
       "total": 530490,
       "deliveryWay": "sdek",
@@ -331,7 +331,7 @@
     {
       "id": "7",
       "status": 5,
-      "createdAt": "2024-08-12T20:20:55.351Z",
+      "createdAt": "2024-08-20T20:20:55.351Z",
       "finishedAt": "",
       "total": 300000,
       "deliveryWay": "mail",
@@ -362,7 +362,7 @@
     {
       "id": "8",
       "status": 1,
-      "createdAt": "2024-08-12T20:20:55.351Z",
+      "createdAt": "2024-08-01T20:20:55.351Z",
       "finishedAt": "2024-08-12T20:25:55.351Z",
       "total": 33000,
       "deliveryWay": "sdek",

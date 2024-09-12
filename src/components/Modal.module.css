@@ -50,9 +50,19 @@
 .saveButton {
   background-color: #28a745;
   color: white;
+  border-radius: 10px;
+}
+
+.saveButton:hover {
+  background-color: #089527;
 }
 
 .cancelButton {
   background-color: #dc3545;
   color: white;
+  border-radius: 10px;
+}
+
+.cancelButton:hover {
+  background-color: #b12331;
 }

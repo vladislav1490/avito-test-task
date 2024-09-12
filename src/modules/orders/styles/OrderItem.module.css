@@ -1,0 +1,30 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemName {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.itemPrice {
+  color: #555;
+}
+
+.adLink {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.adLink:hover {
+  text-decoration: underline;
+}

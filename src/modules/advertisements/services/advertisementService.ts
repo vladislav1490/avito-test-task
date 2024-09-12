@@ -19,26 +19,18 @@ export const fetchAdvertisementById = async (id: string): Promise<Advertisement>
 };
 
 export const createAdvertisement = async (ad: Omit<Advertisement, 'id'>): Promise<Advertisement> => {
-  const ads = await fetchAdvertisements();
-  const maxId = Math.max(...ads.map(ad => parseInt(ad.id, 10)), 0);
-  
-  const newAd: Advertisement = {
-    ...ad,
-    id: (maxId + 1).toString(),
-  };
-  
   const response = await fetch(`${API_URL}/advertisements`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(newAd),
+    body: JSON.stringify(ad),
   });
 
   if (!response.ok) {
     throw new Error('Failed to create ad');
   }
-  
+
   return response.json();
 };
 
@@ -50,8 +42,10 @@ export const updateAdvertisement = async (id: string, ad: Partial<Advertisement>
     },
     body: JSON.stringify(ad),
   });
+  
   if (!response.ok) {
     throw new Error('Failed to update ad');
   }
+  
   return response.json();
 };

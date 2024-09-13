@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { fetchAdvertisements, createAdvertisement, updateAdvertisement } from '../services/advertisementService';
 import { Advertisement } from '../../../types';
-import Pagination from '../../../components/Pagination';
-import Modal from '../../../components/Modal';
+import Pagination from '../../../components/pagination/Pagination';
+import Modal from '../../../components/modal/Modal';
 import AdvertisementItem from '../components/AdvertisementItem';
 import styles from '../styles/AllAdvertisementsPage.module.css';
 import loaderStyles from '../styles/Loader.module.css';
@@ -79,12 +79,12 @@ const AllAdvertisementsPage = () => {
           </div>
 
         <div className={styles.itemsPerPage}>
-            <label htmlFor="items-per-page">Show: </label>
-            <select
-              id="items-per-page"
-              value={itemsPerPage}
-              onChange={(e) => setItemsPerPage(Number(e.target.value))}
-            >
+          <label htmlFor="items-per-page">Show: </label>
+          <select
+            id="items-per-page"
+            value={itemsPerPage}
+            onChange={(e) => setItemsPerPage(Number(e.target.value))}
+          >
               <option value={5}>5</option>
               <option value={10}>10</option>
               <option value={20}>20</option>

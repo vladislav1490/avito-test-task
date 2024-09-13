@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from './Modal.module.css';
-import { Advertisement } from '../types';
-import { createAdvertisement, updateAdvertisement } from '../modules/advertisements/services/advertisementService';
+import { Advertisement } from '../../types';
+import { createAdvertisement, updateAdvertisement } from '../../modules/advertisements/services/advertisementService';
 
 interface ModalProps {
   onClose: () => void;

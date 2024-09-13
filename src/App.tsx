@@ -3,7 +3,7 @@ import AllAdvertisementsPage from './modules/advertisements/pages/AllAdvertiseme
 import OrdersPage from './modules/orders/pages/OrdersPage';
 import AdvertisementPage from './modules/advertisements/pages/AdvertisementPage';
 import OrderPage from './modules/orders/pages/OrderPage';
-import Navigation from './components/Navigation';
+import Navigation from './components/navigation/Navigation';
 import './styles/global.css';
 
 function App() {

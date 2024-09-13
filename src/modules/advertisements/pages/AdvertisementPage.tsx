@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchAdvertisementById, updateAdvertisement } from '../services/advertisementService';
-import Modal from '../../../components/Modal';
+import Modal from '../../../components/modal/Modal';
 import { Advertisement } from '../../../types';
 import styles from '../styles/AdvertisementPage.module.css';
 import loaderStyles from '../styles/Loader.module.css';
